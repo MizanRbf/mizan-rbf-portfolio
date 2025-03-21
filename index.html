@@ -4,13 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
     <!-- FontAwesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,38 +16,48 @@
     </style>
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-
-    </style>
 </head>
 
 <body>
 
   <!-- Header Section -->
-  <header class="header secondary-bg px-4 md:px-20 lg:px-32 bg-black">
+  <header id="header-section" class="bg-black">
     <!-- Navbar Section -->
-      <nav class="flex flex-col md:flex-row justify-between md:items-center py-10">
+      <nav class="flex justify-between items-center py-4 bg-[#0e2b01] border-2 border-b-[#3bb90565] border-x-0 border-t-0 px-4 md:px-20 lg:px-32 fixed top-0 right-0 left-0">
         <!-- LogoName -->
-       <div class="flex gap-2 items-center mb-6 md:mb-0">
-        <img class="w-14 h-14" src="images/logo.png" alt="" class="">
-        <h1 class="text-white text-4xl font-bold">Miza<span class="text-[#3bb905]">n</span>Rbf</h1>
+       <div class="flex gap-2 items-center">
+        <img class="w-10" src="images/logo.png" alt="" class="">
+        <h1 class="text-white text-3xl font-bold">Miza<span class="text-[#3bb905]">n</span>Rbf</h1>
        </div>
        <!-- Nav Items -->
-        <ul class="text-gray-400 flex gap-4 md:gap-10 text-xl flex-col md:flex-row font-bold">
+        <ul class="text-gray-400 flex space-x-6 gap-4 md:gap-10 text-xl flex-col md:flex-row font-bold hidden md:block ">
+        <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">Home</a>
+        <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">About</a>
+        <a onclick="blockProjects()" class="hover:text-[#3bb905]" href="">Projects</a>
+        <a onclick="blockBlog()" class="hover:text-[#3bb905]" href="">Blog</a>
+        <a onclick="blockContact()" class="hover:text-[#3bb905]" href="">Contact</a>
+        </ul>
+          <!-- Dropdown Menu -->
+          <div class="dropdown dropdown-bottom dropdown-end block md:hidden">
+            <div tabindex="0" class="">
+              <i class="text-[#46dd05] w-full text-2xl fa-solid fa-bars cursor-pointer hover:text-[#69ff29]"></i>
+            </div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-gray-800 rounded-sm text-lg font-bold text-white space-y-2">
         <a class="hover:text-[#3bb905]" href="">Home</a>
         <a class="hover:text-[#3bb905]" href="">About</a>
         <a class="hover:text-[#3bb905]" href="">Projects</a>
         <a class="hover:text-[#3bb905]" href="">Blog</a>
         <a class="hover:text-[#3bb905]" href="">Contact</a>
-        </ul>
+            </ul>
+          </div>
       </nav>
       <!-- Banner Section -->
-      <div class="flex flex-col md:flex-row justify-between items-center pb-14">
+      <div class="flex flex-col md:flex-row justify-between items-center pb-14 px-4 md:px-20 lg:px-32 mt-[70px] md:mt-0">
         <!-- Banner Content -->
         <div class="mb-10 md:mb-0">
-          <h4 class="text-[#3bb905] text-2xl font-bold mb-10">Hi There, I'm</h4>
-          <h1 class="text-7xl text-[#3bb905] font-bold mb-10">Mizanur Rahman</h1>
-          <p class="text-gray-400 text-2xl mb-10">A Pasionate Front-end Web-Developer. </p>
+          <h4 class="text-[#3bb905] text-2xl font-bold mb-10 mt-32">Hi There, I'm</h4>
+          <h1 class="text-5xl md:text-7xl text-[#3bb905] font-bold mb-10">Mizanur Rahman</h1>
+          <p class="text-gray-400 text-xl md:text-2xl mb-10">A Pasionate Front-end Web-Developer. </p>
           <!-- Social Site Container -->
            <div class="flex gap-4 mb-10">
             <a href="https://github.com/MizanRbf">
@@ -63,42 +68,43 @@
             <a href="https://x.com/MizanRbf"><i class="text-[#3bb905] hover:text-[#4dfa03] text-2xl fa-brands fa-twitter"></i></a>
            </div>
           <div class="flex gap-4 ">
-            <button class="py-2 px-4 border border-[#3bb905] btn-secondary text-white rounded-sm hover:bg-[#3bb9057e] font-semibold">Say Hello</button>
+            <button onclick="blockAbout" class="py-2 px-4 border border-[#3bb905] btn-secondary text-white rounded-sm bg-[#3bb9057e] hover:bg-[#3bb905af] font-semibold">Say Hello</button>
             <button class="py-2 px-4 border border-[#3bb905] text-white rounded-sm hover:bg-[#3bb9057e] font-semibold">Get My RESUME</button>
           </div>
         </div>
        <!-- Banner Image -->
-        <div>
-          <img class="w-[500px]" src="images/1734329986582_edited_edited.png" alt="">
+        <div class="md:mt-32 w-[500px]">
+          <img class="w-full" src="images/1734329986582_edited_edited.png" alt="">
         </div>
       </div>
   </header>
-  <main class="h-[200px]">
+  <main class="px-4 md:px-20 lg:px-32">
        <!-- About Section -->
-        <section>
+        <section id="about-section" class="h-40 mt-10 border border-[#3bb905] text-center">
+          <h1 class="text-4xl font-bold">About Me</h1>
 
         </section>
        <!-- Projects Section -->
-        <section>
-
+        <section id="projects-section" class="h-40 mt-10 border border-[#3bb905] text-center">
+          <h1 class="text-4xl font-bold">Projects</h1>
         </section>
        <!-- Blog Section -->
-        <section>
-
+        <section id="blog-section" class="h-40 mt-10 border border-[#3bb905] text-center">
+          <h1 class="text-4xl font-bold">Blog</h1>
         </section>
         <!-- Contact Section -->
-         <section>
-
+         <section id="contact-section" class="h-40 mt-10 border border-[#3bb905] text-center">
+          <h1 class="text-4xl font-bold">Contact Me</h1>
          </section>
   </main>
-    <footer class="footer bg-black text-neutral-content flex justify-center flex-col items-center gap-0">
+    <footer class="mt-10 footer bg-[#0e2b01] text-neutral-content flex justify-center flex-col items-center gap-0">
         <div class="flex gap-4 mt-10 mb-4">
           <a href="https://github.com/MizanRbf">
             <i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/mizanrbf"><i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-linkedin"></i></a>
           <a href="https://www.facebook.com/MizanRbf.Sarkar"><i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/MizanRbf"><i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-twitter"></i></a>
+          <a href="https://x.com/MizanRbf"><i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-x-twitter"></i></a>
          </div>
          <div class="flex justify-center items-center my-4 px-[200px]">
           <hr class="border border-white w-[340px] md:w-[700px] lg:w-[1000px]">
@@ -107,6 +113,8 @@
         <p class="text-xs md:text-2xl mb-10">Copyright © 2024 by <span class="font-bold">Mizanur Rahman.</span> All rights reserved</p>
        </div>
     </footer>
+    <script src="display.js"></script>
 </body>
-
 </html>
+
+<!-- Primary Color: [#3bb905] -->
