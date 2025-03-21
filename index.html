@@ -18,19 +18,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-[#0e2b01]">
 
   <!-- Header Section -->
   <header id="header-section" class="bg-black">
     <!-- Navbar Section -->
-      <nav class="flex justify-between items-center py-4 bg-[#0e2b01] border-2 border-b-[#3bb90565] border-x-0 border-t-0 px-4 md:px-20 lg:px-32 fixed top-0 right-0 left-0">
+      <nav class="flex justify-between items-center py-4 bg-[#0e2b01] border-2 border-b-[#3bb90565] border-x-0 border-t-0 px-4 md:px-20 lg:px-32 fixed top-0 right-0 left-0 z-50">
         <!-- LogoName -->
        <div class="flex gap-2 items-center">
-        <img class="w-10" src="images/logo.png" alt="" class="">
+        <img class="w-10" src="images/logo.png" alt="">
         <h1 class="text-white text-3xl font-bold">Miza<span class="text-[#3bb905]">n</span>Rbf</h1>
        </div>
        <!-- Nav Items -->
-        <ul class="text-gray-400 flex space-x-6 gap-4 md:gap-10 text-xl flex-col md:flex-row font-bold hidden md:block ">
+        <ul class="hidden md:flex text-gray-400 space-x-6 gap-4 md:gap-10 text-xl font-bold">
         <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">Home</a>
         <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">About</a>
         <a onclick="blockProjects()" class="hover:text-[#3bb905]" href="">Projects</a>
@@ -38,11 +38,11 @@
         <a onclick="blockContact()" class="hover:text-[#3bb905]" href="">Contact</a>
         </ul>
           <!-- Dropdown Menu -->
-          <div class="dropdown dropdown-bottom dropdown-end block md:hidden">
-            <div tabindex="0" class="">
-              <i class="text-[#46dd05] w-full text-2xl fa-solid fa-bars cursor-pointer hover:text-[#69ff29]"></i>
-            </div>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-gray-800 rounded-sm text-lg font-bold text-white space-y-2">
+          <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+            <button class="text-[#46dd05] w-full text-2xl cursor-pointer hover:text-[#69ff29]">
+              <i class="fa-solid fa-bars "></i>
+            </button>
+            <ul id="mobile-menu" class="dropdown-content z-[1] menu p-2 shadow bg-[#0e2b01] border-2 border-[#3bb90565] rounded-sm text-lg font-bold text-white space-y-2">
         <a class="hover:text-[#3bb905]" href="">Home</a>
         <a class="hover:text-[#3bb905]" href="">About</a>
         <a class="hover:text-[#3bb905]" href="">Projects</a>
@@ -55,8 +55,8 @@
       <div class="flex flex-col md:flex-row justify-between items-center pb-14 px-4 md:px-20 lg:px-32 mt-[70px] md:mt-0">
         <!-- Banner Content -->
         <div class="mb-10 md:mb-0">
-          <h4 class="text-[#3bb905] text-2xl font-bold mb-10 mt-32">Hi There, I'm</h4>
-          <h1 class="text-5xl md:text-7xl text-[#3bb905] font-bold mb-10">Mizanur Rahman</h1>
+          <h4 class="text-[#3bb905] text-2xl font-bold mb-10 mt-10">Hi There, I'm</h4>
+          <h1 class="text-5xl md:text-7xl text-[#3bb905] font-bold mb-6">Mizanur Rahman</h1>
           <p class="text-gray-400 text-xl md:text-2xl mb-10">A Pasionate Front-end Web-Developer. </p>
           <!-- Social Site Container -->
            <div class="flex gap-4 mb-10">
@@ -73,31 +73,42 @@
           </div>
         </div>
        <!-- Banner Image -->
-        <div class="md:mt-32 w-[500px]">
+        <div class="md:mt-32 md:w-[500px]">
           <img class="w-full" src="images/1734329986582_edited_edited.png" alt="">
         </div>
       </div>
   </header>
   <main class="px-4 md:px-20 lg:px-32">
        <!-- About Section -->
-        <section id="about-section" class="h-40 mt-10 border border-[#3bb905] text-center">
-          <h1 class="text-4xl font-bold">About Me</h1>
-
+        <section id="about-section" class="mt-10 border border-[#184703] text-center text-white bg-black pt-6 rounded-md">
+          <span class="text-2xl md:text-4xl font-bold bg-[#0e2b01] px-4 py-1 rounded-md">About Me</span>
+          <p class="text-[#38b101] py-4 px-6 text-justify">
+            I am a passionate and driven Web Development enthusiast currently learning through Programming Hero while pursuing a degree in Arabic Language and Literature at Rajshahi University. With a strong foundation in communication, combined with technical skills in web development, I am focused on building practical and user-centric websites.
+<br>
+<br>
+Through my studies and hands-on projects, I have gained proficiency in HTML, CSS, JavaScript, and other web development technologies. I am actively applying my skills to create responsive, visually appealing websites that deliver seamless user experiences.
+<br>
+<br>
+My goal is to contribute to innovative projects that solve real-world problems, while continuing to expand my knowledge and expertise in web development. I am eager to collaborate with like-minded professionals and organizations that value creativity, problem-solving, and continuous learning.
+<br>
+<br>
+If you're looking for a motivated and detail-oriented web developer with a strong academic background and a passion for technology, I would be excited to connect and explore potential opportunities.
+          </p>
         </section>
        <!-- Projects Section -->
-        <section id="projects-section" class="h-40 mt-10 border border-[#3bb905] text-center">
-          <h1 class="text-4xl font-bold">Projects</h1>
+        <section id="projects-section" class="mt-10 border border-[#184703] text-center text-white bg-black pt-6 rounded-md pb-6">
+          <span class="text-2xl md:text-4xl font-bold bg-[#0e2b01] px-4 py-1 rounded-md">Projects</span>
         </section>
        <!-- Blog Section -->
-        <section id="blog-section" class="h-40 mt-10 border border-[#3bb905] text-center">
-          <h1 class="text-4xl font-bold">Blog</h1>
+        <section id="blog-section" class="mt-10 border border-[#184703] text-center text-white bg-black pt-6 rounded-md pb-6">
+          <span class="text-2xl md:text-4xl font-bold bg-[#0e2b01] px-4 py-1 rounded-md">Blog</span>
         </section>
         <!-- Contact Section -->
-         <section id="contact-section" class="h-40 mt-10 border border-[#3bb905] text-center">
-          <h1 class="text-4xl font-bold">Contact Me</h1>
+         <section id="contact-section" class="mt-10 border border-[#184703] text-center text-white bg-black pt-6 rounded-md pb-6">
+          <span class="text-2xl md:text-4xl font-bold bg-[#0e2b01] px-4 py-1 rounded-md">Contact Me</span>
          </section>
   </main>
-    <footer class="mt-10 footer bg-[#0e2b01] text-neutral-content flex justify-center flex-col items-center gap-0">
+    <footer class="mt-10 footer bg-[#0e2b01] text-neutral-content border-2 border-t-[#3bb905c5] border-x-0 border-b-0 flex justify-center flex-col items-center gap-0">
         <div class="flex gap-4 mt-10 mb-4">
           <a href="https://github.com/MizanRbf">
             <i class="text-[#3bb905] hover:text-[#4dfa03] text-4xl fa-brands fa-github"></i>
