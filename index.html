@@ -30,29 +30,29 @@
         <h1 class="text-white text-3xl font-bold">Miza<span class="text-[#3bb905]">n</span>Rbf</h1>
        </div>
        <!-- Nav Items -->
-        <ul class="hidden md:flex text-gray-400 space-x-6 gap-4 md:gap-10 text-xl font-bold">
-        <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">Home</a>
-        <a onclick="blockHome()" class="hover:text-[#3bb905]" href="">About</a>
-        <a onclick="blockProjects()" class="hover:text-[#3bb905]" href="">Projects</a>
-        <a onclick="blockBlog()" class="hover:text-[#3bb905]" href="">Blog</a>
-        <a onclick="blockContact()" class="hover:text-[#3bb905]" href="">Contact</a>
-        </ul>
+        <div class="hidden md:flex text-gray-400 space-x-6 gap-4 md:gap-10 text-xl font-bold">
+        <button onclick="blockHome()" class="hover:text-[#3bb905]" href="">Home</button>
+        <button onclick="blockAbout()" class="hover:text-[#3bb905]" href="">About</button>
+        <button onclick="blockProjects()" class="hover:text-[#3bb905]" href="">Projects</button>
+        <button onclick="blockBlog()" class="hover:text-[#3bb905]" href="">Blog</button>
+        <button onclick="blockContact()" class="hover:text-[#3bb905]" href="">Contact</button>
+        </div>
           <!-- Dropdown Menu -->
           <div class="dropdown dropdown-bottom dropdown-end md:hidden">
             <button class="text-[#46dd05] w-full text-2xl cursor-pointer hover:text-[#69ff29]">
               <i class="fa-solid fa-bars "></i>
             </button>
-            <ul id="mobile-menu" class="dropdown-content menu px-0 shadow bg-[#0e2b01] border-2 border-[#3bb90565] rounded-sm text-lg font-bold text-white py-0">
-        <a class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Home</a>
-        <a class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">About</a>
-        <a class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Projects</a>
-        <a class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Blog</a>
-        <a class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Contact</a>
-            </ul>
+            <div id="mobile-menu" class="dropdown-content menu px-0 shadow bg-[#0e2b01] border-2 border-[#3bb90565] rounded-sm text-lg font-bold text-white py-0">
+        <button onclick="blockHome()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Home</button>
+        <button onclick="blockAbout()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">About</button>
+        <button onclick="blockProjects()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Projects</button>
+        <button onclick="blockBlog()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Blog</button>
+        <button onclick="blockContact()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Contact</button>
+            </div>
           </div>
       </nav>
       <!-- Banner Section -->
-      <div class="flex flex-col md:flex-row justify-between items-center pb-14 px-4 md:px-20 lg:px-32 mt-[70px] md:mt-0">
+      <div id="banner-section" class="flex flex-col md:flex-row justify-between items-center pb-14 px-4 md:px-20 lg:px-32 mt-[70px] md:mt-0">
         <!-- Banner Content -->
         <div class="mb-10 md:mb-0">
           <h4 class="text-[#3bb905] text-2xl font-bold mb-10 mt-10">Hi There, I'm</h4>

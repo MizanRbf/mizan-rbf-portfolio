@@ -1,19 +1,20 @@
 const blockHome = () => {
-  document.getElementById("banner-section").style.display = "block";
   document.getElementById("about-section").style.display = "none";
   document.getElementById("projects-section").style.display = "none";
   document.getElementById("blog-section").style.display = "none";
   document.getElementById("contact-section").style.display = "none";
+  document.getElementById("banner-section").style.display = "block";
+  document.getElementById("banner-section").style.display = "flex";
 }
 const blockAbout = () => {
   document.getElementById("banner-section").style.display = "none";
-  document.getElementById("about-section").style.display = "block";
   document.getElementById("projects-section").style.display = "none";
   document.getElementById("blog-section").style.display = "none";
   document.getElementById("contact-section").style.display = "none";
+  document.getElementById("about-section").style.display = "block";
+  document.getElementById("about-section").style.marginTop = "70px";
+  document.getElementById("about-section").style.marginBottom = "200px";
 }
-blockAbout();
-
 const blockProjects = () => {
   document.getElementById("banner-section").style.display = "none";
   document.getElementById("about-section").style.display = "none";
