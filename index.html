@@ -18,12 +18,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#0e2b01]">
+<body class="bg-[#0e2b01] m-0 p-0">
 
   <!-- Header Section -->
   <header id="header-section" class="bg-black">
     <!-- Navbar Section -->
-      <nav class="flex justify-between items-center py-4 bg-[#0e2b01] border-2 border-b-[#3bb90565] border-x-0 border-t-0 px-6 md:px-20 lg:px-32 fixed top-0 right-0 left-0 w-screen">
+      <nav class="flex justify-between items-center py-4 bg-[#0e2b01] border-2 border-b-[#3bb90565] border-x-0 border-t-0 px-6 md:px-20 lg:px-32 fixed top-0 right-0 left-0 w-screen ">
         <!-- LogoName -->
        <div class="flex gap-2 items-center">
         <img class="w-10" src="images/logo.png" alt="">
@@ -42,12 +42,12 @@
             <button class="text-[#46dd05] w-full text-2xl cursor-pointer hover:text-[#69ff29]">
               <i class="fa-solid fa-bars "></i>
             </button>
-            <div id="mobile-menu" class="dropdown-content menu px-0 shadow bg-[#0e2b01] border-2 border-[#3bb90565] rounded-sm text-lg font-bold text-white py-0">
-        <button onclick="blockHome()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Home</button>
-        <button onclick="blockAbout()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">About</button>
-        <button onclick="blockProjects()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Projects</button>
-        <button onclick="blockBlog()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Blog</button>
-        <button onclick="blockContact()" class="text-white hover:bg-[#3bb9057e] px-6 py-2" href="">Contact</button>
+            <div id="mobile-menu" class="dropdown-content menu p-1 shadow bg-[#0e2b01] border-2 border-[#3bb90565] rounded-md text-lg font-bold text-white space-y-2">
+        <button onclick="blockHome()" class="text-white hover:bg-[#3bb9052d] rounded-sm px-6" href="">Home</button>
+        <button onclick="blockAbout()" class="text-white hover:bg-[#3bb9052d] rounded-sm px-6" href="">About</button>
+        <button onclick="blockProjects()" class="text-white hover:bg-[#3bb9052d] rounded-sm px-6" href="">Projects</button>
+        <button onclick="blockBlog()" class="text-white hover:bg-[#3bb9052d] rounded-sm px-6" href="">Blog</button>
+        <button onclick="blockContact()" class="text-white hover:bg-[#3bb9052d] rounded-sm px-6" href="">Contact</button>
             </div>
           </div>
       </nav>
@@ -81,7 +81,7 @@
   <main class="px-4 md:px-20 lg:px-32">
        <!-- About Section -->
         <section id="about-section" class="mt-10 border border-[#184703] text-white bg-black pt-4 rounded-md">
-          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-xl">About Me</span>
+          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-md rounded-bl-xl rounded">About Me</span>
           <p class="text-[#38b101] py-4 px-6 text-justify">
 Hello! I'm Mizanur Rahman, a passionate Junior Web Developer with a strong foundation in HTML, CSS, and JavaScript. Currently, I'm expanding my expertise in Java and learning full-stack development to build dynamic and user-friendly applications.
 I'm pursuing a degree in Arabic Language and Literature at the University of Rajshahi, and alongside my studies, I'm honing my skills in web development at Programming Hero. My goal is to become a full-stack developer and work in a professional tech environment.
@@ -91,15 +91,15 @@ I'm always open to new projects, collaborations, and learning opportunities. Let
         </section>
        <!-- Projects Section -->
         <section id="projects-section" class="mt-10 border border-[#184703] text-white bg-black pt-4 rounded-md pb-6">
-          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-xl">Projects</span>
+          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-md rounded-bl-xl">Projects</span>
         </section>
        <!-- Blog Section -->
         <section id="blog-section" class="mt-10 border border-[#184703] text-white bg-black pt-4 rounded-md pb-6">
-          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-xl">Blog</span>
+          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-md rounded-bl-xl">Blog</span>
         </section>
         <!-- Contact Section -->
          <section id="contact-section" class="mt-10 border border-[#184703] text-white bg-black pt-4 rounded-md pb-6">
-          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-xl">Contact Me</span>
+          <span class="text-xl md:text-2xl py-1 font-bold bg-[#0e2b01] px-4 border border-[#184703] border-l-0 rounded-tr-xl rounded-br-md rounded-bl-xl">Contact Me</span>
          </section>
   </main>
     <footer class="mt-10 footer bg-[#0e2b01] text-neutral-content border-2 border-t-[#3bb905c5] border-x-0 border-b-0 flex justify-center flex-col items-center gap-0">
